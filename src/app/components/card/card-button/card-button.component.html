@@ -1,0 +1,11 @@
+<a
+  *ngIf="park && park.link"
+  [href]="park.link"
+  target="_blank"
+  [class]="
+    cardIndex === 0
+      ? 'button featured'
+      : 'button button--' + park.category.toLowerCase()
+  "
+  >{{ park.linkText }}</a
+>

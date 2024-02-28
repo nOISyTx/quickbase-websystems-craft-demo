@@ -1,0 +1,14 @@
+<div *ngIf="park" class="park-card h-100 mb-3" [class]="(cardIndex === 0 ? 'featured' : null)">
+  <h4 [class]="'banner banner--'+ park.category.toLowerCase()">{{ park.category }}</h4>
+  <img
+    [src]="park.image"
+    class="image"
+    alt="Park Image"
+    *ngIf="park.image"
+  />
+  <div class="card-body">
+    <h5 class="card-title">{{ park.title ? park.title : "National Park" }}</h5>
+    <p class="card-text">{{ park.body }}</p>
+    <card-button class="card-button" [park]="park" [cardIndex]="cardIndex"></card-button>
+  </div>
+</div>

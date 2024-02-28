@@ -1,0 +1,11 @@
+// Media query breakpoints
+$breakpoint-xs: 576px;
+$breakpoint-sm: 768px;
+$breakpoint-md: 992px;
+$breakpoint-lg: 1200px;
+
+// Media queries
+$media-query-xs: "(min-width: #{ $breakpoint-xs })";
+$media-query-sm: "(min-width: #{ $breakpoint-sm })";
+$media-query-md: "(min-width: #{ $breakpoint-md })";
+$media-query-lg: "(min-width: #{ $breakpoint-lg })";

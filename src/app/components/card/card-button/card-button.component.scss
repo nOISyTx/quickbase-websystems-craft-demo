@@ -1,0 +1,45 @@
+@import "../../../styles/variables.scss";
+
+.button {
+  padding: 8px 15px;
+  margin: 0 15px 15px 15px;
+  font-weight: bold;
+  display: inline-block;
+  text-decoration: none;
+  transition: all 0.2s linear;
+  cursor: pointer;
+
+  &.featured {
+    background-color: $chrome;
+    color: black;
+  }
+
+  &--natural {
+    background-color: $asparagus;
+    color: black;
+
+    &:hover {
+      background-color: $elm;
+      color: white;
+    }
+  }
+
+  &--historical {
+    background-color: $carrot;
+    color: black;
+
+    &:hover {
+      background-color: $geraldine;
+    }
+  }
+
+  &--monument {
+    background-color: $elm;
+    color: white;
+
+    &:hover {
+      background-color: $asparagus;
+      color: black;
+    }
+  }
+}

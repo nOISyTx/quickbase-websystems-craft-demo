@@ -1,0 +1,75 @@
+@import "../../styles/variables.scss";
+@import "../../styles/functions.scss";
+@import "../../styles/media-queries.scss";
+
+.park-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid $dune;
+  color: black;
+  font-size: px-to-rem(16px);
+  margin-right: 15px;
+  margin-left: 15px;
+
+  &.featured {
+    background-color: $elm;
+    color: white;
+  }
+
+  .banner {
+    padding: 15px;
+    margin-bottom: 0;
+    font-size: px-to-rem(18px);
+
+    @media #{$media-query-md} {
+      font-size: px-to-rem(24px);
+    }
+
+    &__text {
+      font-weight: bold;
+    }
+
+    &--natural {
+      background-color: $asparagus;
+      color: black;
+    }
+
+    &--historical {
+      background-color: $carrot;
+      color: black;
+    }
+
+    &--monument {
+      background-color: $elm;
+      color: white;
+    }
+  }
+
+  .image {
+    min-height: 250px;
+    object-fit: cover;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+
+    .card-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 15px;
+
+      @media #{$media-query-md} {
+        font-size: px-to-rem(36px);
+      }
+    }
+
+    .card-text {
+      margin: 0 15px 30px 15px;
+    }
+
+    .card-button {
+      margin-top: auto;
+    }
+  }
+}
