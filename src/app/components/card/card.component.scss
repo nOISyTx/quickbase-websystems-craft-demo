@@ -7,7 +7,7 @@
   flex-direction: column;
   border: 1px solid $dune;
   color: black;
-  font-size: px-to-rem(16px);
+  font-size: px-to-rem($base-font-size);
   margin-right: 15px;
   margin-left: 15px;
 

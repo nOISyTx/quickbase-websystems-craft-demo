@@ -1,6 +1,12 @@
-# QuickbaseWebsystemsCraftDemo
+# Quickbase: Web-systems Craft Demo
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.1.
+
+## Prerequisites
+
+In order to run this project you need to have NodeJs installed locally [Node](https://nodejs.org/en)
+
+After [Node] installation please run `npm install` inside the project directory to install all necessary packages required to run the project.
 
 ## Development server
 

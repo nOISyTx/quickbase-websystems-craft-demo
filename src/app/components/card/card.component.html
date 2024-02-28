@@ -1,5 +1,5 @@
 <div *ngIf="park" class="park-card h-100 mb-3" [class]="(cardIndex === 0 ? 'featured' : null)">
-  <h4 [class]="'banner banner--'+ park.category.toLowerCase()">{{ park.category }}</h4>
+  <h4 [class]="'banner banner__text banner--'+ park.category.toLowerCase()">{{ park.category }}</h4>
   <img
     [src]="park.image"
     class="image"

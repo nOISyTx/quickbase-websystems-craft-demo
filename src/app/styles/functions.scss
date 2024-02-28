@@ -1,4 +1,6 @@
+@import './variables.scss';
+
 // Function to convert pixels to rems
-@function px-to-rem($px-value, $base-font-size: 16px) {
+@function px-to-rem($px-value, $base-font-size: $base-font-size) {
   @return ($px-value / $base-font-size) + rem;
 }
