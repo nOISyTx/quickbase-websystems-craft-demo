@@ -1,15 +1,14 @@
-@import "../../styles/variables.scss";
-@import "../../styles/functions.scss";
-@import "../../styles/media-queries.scss";
+@import '../../styles/variables';
+@import '../../styles/mixins';
 
 .park-card {
   display: flex;
   flex-direction: column;
   border: 1px solid $dune;
-  color: black;
-  font-size: px-to-rem($base-font-size);
-  margin-right: 15px;
-  margin-left: 15px;
+  color: $black;
+  font-size: $base-font-size;
+  margin-right: $size-sm;
+  margin-left: $size-sm;
 
   &.featured {
     background-color: $elm;
@@ -17,12 +16,12 @@
   }
 
   .banner {
-    padding: 15px;
+    padding: $size-sm;
     margin-bottom: 0;
-    font-size: px-to-rem(18px);
+    font-size: $font-size-sm;
 
     @media #{$media-query-md} {
-      font-size: px-to-rem(24px);
+      font-size: $font-size-md;
     }
 
     &__text {
@@ -31,22 +30,22 @@
 
     &--natural {
       background-color: $asparagus;
-      color: black;
+      color: $black;
     }
 
     &--historical {
       background-color: $carrot;
-      color: black;
+      color: $black;
     }
 
     &--monument {
       background-color: $elm;
-      color: white;
+      color: $white;
     }
   }
 
   .image {
-    min-height: 250px;
+    min-height: px-to-rem(250px);
     object-fit: cover;
   }
 
@@ -55,17 +54,17 @@
     flex-direction: column;
 
     .card-title {
-      font-size: 24px;
+      font-size: $font-size-md;
       font-weight: bold;
-      margin: 15px;
+      margin: $size-md;
 
       @media #{$media-query-md} {
-        font-size: px-to-rem(36px);
+        font-size: $font-size-lg;
       }
     }
 
     .card-text {
-      margin: 0 15px 30px 15px;
+      margin: 0 $size-md $size-lg $size-md;
     }
 
     .card-button {

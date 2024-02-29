@@ -1,11 +1,11 @@
-@import "./styles/functions.scss";
-@import "./styles/media-queries.scss";
+@import './styles/variables';
+@import './styles/mixins';
 
 .row {
-  row-gap: px-to-rem(30px);
+  row-gap: $size-lg;
 
   @media #{$media-query-md} {
-    row-gap: px-to-rem(15px);
+    row-gap: $size-md;
   }
 
   [class^="col-"] {

@@ -1,8 +1,8 @@
-@import "../../../styles/variables.scss";
+@import '../../../styles/variables';
 
 .button {
-  padding: 8px 15px;
-  margin: 0 15px 15px 15px;
+  padding: $size-sm $size-md;
+  margin: 0 $size-md $size-md $size-md;
   font-weight: bold;
   display: inline-block;
   text-decoration: none;
@@ -11,16 +11,16 @@
 
   &.featured {
     background-color: $chrome;
-    color: black;
+    color: $black;
   }
 
   &--natural {
     background-color: $asparagus;
-    color: black;
+    color: $black;
 
     &:hover {
       background-color: $elm;
-      color: white;
+      color: $white;
     }
   }
 
@@ -35,11 +35,11 @@
 
   &--monument {
     background-color: $elm;
-    color: white;
+    color: $white;
 
     &:hover {
       background-color: $asparagus;
-      color: black;
+      color: $black;
     }
   }
 }

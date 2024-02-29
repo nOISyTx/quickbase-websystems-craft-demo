@@ -1,3 +1,5 @@
+@import '../styles/functions';
+
 $black: #000000;
 $white: #ffffff;
 
@@ -9,5 +11,13 @@ $elm: #1a6874; /* rgb 26, 104, 116 */
 $geraldine: #f79b82; /* rgb 247, 155, 130 */
 $picton-blue: #47c5e0; /* rgb 71, 197, 224 */
 
-/* Sizes */
+/* Font Sizes */
 $base-font-size: 16px;
+$font-size-sm: px-to-rem(18px);
+$font-size-md: px-to-rem(24px);
+$font-size-lg: px-to-rem(36px);
+
+/* General Sizing */
+$size-sm: px-to-rem(8px);
+$size-md: px-to-rem(15px);
+$size-lg: px-to-rem(30px);
